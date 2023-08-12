@@ -8,3 +8,16 @@ https://blog.webdevsimplified.com/2022-01/resize-observer/
 ---------------------------------------------------------------------------
 
 !!! Notes about the usage is in the script.js file.
+
+const observer = new ResizeObserver(changeColor);
+observer.observe(document.getElementById('test'), { box: 'border-box' });
+
+
+new ResizeObserver((entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.contentRect.width < 150) {
+      entry.target.remove();
+      observer.unobserve(entry.target);
+    }
+  });
+});
