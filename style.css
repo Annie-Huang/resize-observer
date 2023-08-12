@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+}
+.box {
+  width: 90vw;
+  aspect-ratio: 1;
+  background-color: red;
+}
+.text {
+  border: 1px solid;
+}
