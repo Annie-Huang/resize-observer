@@ -1,0 +1,8 @@
+Learn Resize Observer In 5 Minutes (https://www.youtube.com/watch?v=M2c37drnnOA)
+
+https://github.com/Annie-Huang/resize-observer
+
+https://blog.webdevsimplified.com/2022-01/intersection-observer/
+https://blog.webdevsimplified.com/2022-01/resize-observer/
+---------------------------------------------------------------------------
+
