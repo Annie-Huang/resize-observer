@@ -25,7 +25,11 @@ Each ResizeObserverEntry has the following attributes {
 
 const observer = new ResizeObserver((entries) => {
   console.log(entries);
+
+  const boxElement = entries[0];
+  const isSmall = boxElement.contentRect.width < 150; // 150px
+  boxElement.target.style.backgroundColor = isSmall ? 'blue' : 'red';
 });
 
 observer.observe(box);
-observer.observe(container);
+// observer.observe(container);
